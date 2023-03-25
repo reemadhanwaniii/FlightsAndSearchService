@@ -12,12 +12,14 @@ router.get('/city/:id',CityController.get);
 router.patch('/city/:id',CityController.update);
 router.get('/city',CityController.getAll);
 
+
 router.post('/flight',
 FlightMiddlewares.validateCreateFlight,
 FlightController.create);
 
 router.get('/flight',FlightController.getAll);
 router.get('/flight/:id',FlightController.get);
+router.patch('/flight/:id',FlightController.update);
 
 router.post('/airport',AirportController.create);
 

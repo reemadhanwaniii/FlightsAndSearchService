@@ -17,7 +17,7 @@ class CrudRepository {
         try {
             await this.model.destroy({
                 where:{
-                    id:modelId
+                    id: modelId
                 }
             });
             return true;
